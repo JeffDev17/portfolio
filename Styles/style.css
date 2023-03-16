@@ -1,0 +1,140 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+  :root {
+    --maincolor: #000000;
+    --secondarycolor: #f6f6f6;
+    --thirdcolor:greenyellow;
+    --hovercolor: #272727;
+
+    --mainfont: 'Krona One', sans-serif;
+    --secondaryfont: 'Montserrat', sans-serif;
+    
+  }
+
+* {
+    margin: 0;
+   padding: 0; 
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--maincolor);
+    color: var(--secondarycolor)
+}
+
+.highlight1 {
+    color: var(--thirdcolor);
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.apresentacao__conteudo__title {
+    font-size: 2.25rem;
+    font-family: var(--mainfont);
+}
+
+.apresentacao__subtitle {
+    font-family: var(--mainfont);
+    font-weight: 400;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--secondaryfont);
+    
+}
+/* LINKS */
+.links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.estilo_links {
+    /*background-color: greenyellow;*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--thirdcolor);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0px;
+    color: var(--thirdcolor);
+    font-family: var(--secondaryfont);
+    text-decoration: none;
+    
+}
+
+.borda_img {
+    border-radius: 16px;
+    width: 50%;
+}
+/* FOOTER + HOVER */
+.estilo_links:hover {
+    background-color: var(--hovercolor);
+}
+.style_footer {
+    color: #000000;
+    background-color: var(--thirdcolor);
+    padding: 24px;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--secondaryfont);
+}
+
+/* HEADER */
+.header_menu_link {
+    font-family: var(--secondaryfont);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--thirdcolor);
+    text-decoration: none;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .header {
+        padding: 10%;
+    }
+    .header_menu {
+        justify-content: center;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
